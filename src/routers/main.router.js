@@ -1,8 +1,8 @@
 const { Router } = require("express");
-const notesRouter = require("./notes.router");
+const todoRouter = require("./todo.router");
 
 const mainRouter = Router();
 
-mainRouter.use("/notes", notesRouter);
+mainRouter.use("/todos", todoRouter);
 
 module.exports = mainRouter;
